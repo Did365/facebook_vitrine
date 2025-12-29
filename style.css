@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+}
+
+
+
+.site-header {
+    background: #2575fc;
+    color: white;
+    padding: 15px 30px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+main {
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.site-header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.site-header nav a:hover {
+    text-decoration: underline;
+}
+
+
+.form-container {
+    background: white;
+    padding: 30px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color: #377cf5;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #dadcdf;
+}
+
+
+/* AUTH SWITCH TEXT */
+.switch-text {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+    color: #555;
+}
+
+
+.switch-text span {
+    color: #2575fc;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.switch-text span:hover {
+    text-decoration: underline;
+}
+
+
+/* ABOUT PAGE */
+.about-container {
+    background: white;
+    padding: 40px;
+    width: 55%;
+    max-width: 650px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.about-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-container p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+
+/* CONTACT PAGE - PROFESSIONAL */
+.contact-container {
+    background: #ffffff;
+    padding: 40px;
+    width: 90%;
+    max-width: 520px;
+    margin: 0 auto;
+    border-radius: 14px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.contact-container h2 {
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: #222;
+}
+
+.contact-subtitle {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* FORM STRUCTURE */
+.contact-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* INPUTS */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #2575fc;
+}
+
+/* BUTTON */
+.contact-form button {
+    width: 100%;
+    padding: 14px;
+    background: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #1a5ed8;
+}
+
+
+/* FOOTER */
+.site-footer {
+    background: #1a5ed8;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    main {
+        height: auto;
+        min-height: calc(100vh - 70px);
+        align-items: flex-start;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .form-container {
+        width: 90%;
+        max-width: 400px;
+        padding: 25px;
+    }
+
+    .form-container h2 {
+        font-size: 22px;
+    }
+
+    .input-group input {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    button {
+        padding: 14px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        margin-top: 20px;
+    }
+}
+
+
+
+.card {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+button {
+    transition: background 0.3s ease;
+}
